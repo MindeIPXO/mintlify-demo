@@ -1,5 +1,5 @@
 {
-    "name": "Example Docs",
+    "name": "IPXO Docs",
     "theme": "mint",
     "colors": {
         "primary": "#16A34A"
@@ -17,16 +17,21 @@
                             "guides/auth",
                             "guides/errors"
                         ]
+                    },
+                    {
+                        "group": "API Reference",
+                        "pages": [
+                            {
+                                "group": "Billing Service",
+                                "openapi": "openapi/billing.openapi.yaml"
+                            },
+                            {
+                                "group": "Inventory Service",
+                                "openapi": "openapi/inventory.openapi.yaml"
+                            }
+                        ]
                     }
                 ]
-            },
-            {
-                "tab": "Billing API",
-                "openapi": "openapi/billing.openapi.yaml"
-            },
-            {
-                "tab": "Inventory API",
-                "openapi": "openapi/inventory.openapi.yaml"
             }
         ]
     }
