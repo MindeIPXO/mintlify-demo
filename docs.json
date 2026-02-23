@@ -1,26 +1,33 @@
 {
-  "name": "Example Docs",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Docs",
-        "pages": [
-          "index",
-          "quickstart",
-          {
-            "group": "Guides",
-            "pages": ["guides/auth", "guides/errors"]
-          }
+    "name": "Example Docs",
+    "theme": "mint",
+    "colors": {
+        "primary": "#16A34A"
+    },
+    "navigation": {
+        "tabs": [
+            {
+                "tab": "Docs",
+                "pages": [
+                    "index",
+                    "quickstart",
+                    {
+                        "group": "Guides",
+                        "pages": [
+                            "guides/auth",
+                            "guides/errors"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "Billing API",
+                "openapi": "openapi/billing.openapi.yaml"
+            },
+            {
+                "tab": "Inventory API",
+                "openapi": "openapi/inventory.openapi.yaml"
+            }
         ]
-      },
-      {
-        "tab": "Billing API",
-        "openapi": "openapi/billing.openapi.yaml"
-      },
-      {
-        "tab": "Inventory API",
-        "openapi": "openapi/inventory.openapi.yaml"
-      }
-    ]
-  }
+    }
 }
