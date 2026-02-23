@@ -1,0 +1,26 @@
+{
+  "name": "Example Docs",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Docs",
+        "pages": [
+          "index",
+          "quickstart",
+          {
+            "group": "Guides",
+            "pages": ["guides/auth", "guides/errors"]
+          }
+        ]
+      },
+      {
+        "tab": "Billing API",
+        "openapi": "openapi/billing.openapi.yaml"
+      },
+      {
+        "tab": "Inventory API",
+        "openapi": "openapi/inventory.openapi.yaml"
+      }
+    ]
+  }
+}

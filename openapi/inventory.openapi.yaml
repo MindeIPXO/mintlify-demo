@@ -1,0 +1,40 @@
+openapi: 3.1.0
+info:
+  title: Inventory Service API
+  version: 1.0.0
+servers:
+  - url: https://api.example.com/inventory/v1
+
+paths:
+  /items:
+    get:
+      summary: List items
+      responses:
+        "200":
+          description: OK
+
+  /items/{sku}:
+    get:
+      summary: Get item
+      parameters:
+        - in: path
+          name: sku
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: OK
+
+  /items/{sku}/stock-adjustments:
+    post:
+      summary: Adjust stock
+      parameters:
+        - in: path
+          name: sku
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: OK
