@@ -23,7 +23,7 @@
                         "pages": [
                             {
                                 "group": "Billing Service",
-                                "openapi": "openapi/billing.openapi.yaml"
+                                "openapi": "openapi/billing.yaml"
                             },
                             {
                                 "group": "Inventory Service",
